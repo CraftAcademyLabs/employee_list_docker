@@ -17,7 +17,6 @@ services:
       - web
     environment:
       - CYPRESS_baseUrl=http://web:3000
-      - CYPRESS_video=false
     command: npx cypress run
     volumes:
       - ./e2e/cypress:/app/cypress
